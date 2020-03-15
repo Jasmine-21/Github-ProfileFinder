@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    width: 100vw;
+    min-height: 500px;
+    height: 100vh;
+    padding: 10px 0;
+    background: linear-gradient(
+        223deg,
+        #c5f 14%,
+        #4f8 86%
+    )  no-repeat fixed;
+    font-family: Arial;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+
+/* search starts */
+.searchbox {
+    height: 60px;
+    border-radius: 30px;
+    background: rgba(0,255,0,0.6);
+    flex-direction: row;
+}
+
+.searchbox .userId {
+    width: calc(90vw - 60px);
+    max-width: 300px;
+    height: 60px;
+    padding: 0 10px;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+}
+
+    .userId:focus { outline: none }
+
+.searchbox .userId::placeholder {
+    color: #000;
+    opacity: 1;
+}
+
+.searchbox .search {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    color: #000;
+    cursor: pointer;
+}
+
+.searchbox .search .fa-search {
+    font-size: 30px;
+    transition: transform 80ms;
+}
+
+    .searchbox .search:hover .fa-search { transform: scale(1.2) }
+/* search ends */
+
+/* profile starts*/
+.profile {
+    width: 90%;
+    max-width: 360px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #0ff;
+    box-shadow: 0 0 3px 1px #fff;
+    display: none;
+}
+
+.profile figure {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.profile figure #avatar {
+    width: 102px;
+    height: 102px;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+}
+
+.profile figure #name {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.profile .info {
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background: #fff;
+}
+
+.profile .info > span {
+    display: block;
+    margin: 10px 0;
+}
+
+.profile .info > .detail { font-size: 20px }
+
+.profile .info > span:nth-child(4) {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.profile .info span .linkToProfile {
+    text-decoration: none;
+    color: #00f;
+    font-size: 20px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+/* profile ends*/
+
+/* message starts */
+#msg {
+    width: 90%;
+    max-width: 400px;
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    display: none;
+}
+/* message ends */
