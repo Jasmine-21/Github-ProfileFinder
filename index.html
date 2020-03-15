@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find GitHub Users</title>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Biraj"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body class="align">
+        <!-- search -->
+        <div class="align searchbox">
+            <input type="text" class="userId" value="Jasmine-21" placeholder="Enter username..."/>
+            <a href="#" class="align search"><i class="fa fa-search"></i></a>
+        </div>
+
+        <!-- profile -->
+        <div class="profile">
+            <figure class="align">
+                <img id="avatar" src="" alt="avatar"/>
+                <span id="name"></span>
+                <span id="symbolNegwork"><i class="fas fa-users"></i></span>
+                <span id="network"></span>
+            </figure>
+            <p class="info">
+                <span class="detail"></span>
+                <span class="detail"></span>
+                <span class="detail"></span>
+                <span><a target="_blank" class="linkToProfile">
+                <i class="fab fa-github"></i> Visit Profile</a></span>
+            </p>
+        </div>
+
+        <!-- message -->
+        <p id="msg"></p>
+
+        <script src="main.js"></script>
+    </body>
+</html>
