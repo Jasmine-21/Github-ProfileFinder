@@ -1,4 +1,5 @@
 # Github-ProfileFinder
-Search users profiles, repositories, followers, following, links etc from GitHub using fetch API.
+A simple github profile searcher webpage that displays name, user avatar, latest repos, followers, etc. on providing a github username.
 
 Live : https://jasmine-21.github.io/Github-ProfileFinder/
+
