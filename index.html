@@ -1,40 +1,36 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Find GitHub Users</title>
-        <meta charset="UTF-8"/>
-        <meta name="author" content="Jasmine"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    <body class="align">
-        <!-- search -->
-        <div class="align searchbox">
-            <input type="text" class="userId" value="Jasmine-21" placeholder="Enter username..."/>
-            <a href="#" class="align search"><i class="fa fa-search"></i></a>
-        </div>
+<html lang="en">
 
-        <!-- profile -->
-        <div class="profile">
-            <figure class="align">
-                <img id="avatar" src="" alt="avatar"/>
-                <span id="name"></span>
-                <span id="symbolNegwork"><i class="fas fa-users"></i></span>
-                <span id="network"></span>
-            </figure>
-            <p class="info">
-                <span class="detail"></span>
-                <span class="detail"></span>
-                <span class="detail"></span>
-                <span><a target="_blank" class="linkToProfile">
-                <i class="fab fa-github"></i> Visit Profile</a></span>
-            </p>
-        </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Github Searcher</title>
 
-        <!-- message -->
-        <p id="msg"></p>
+    <!-- Bootstrap core CSS -->
+    <link href="https://bootswatch.com/4/simplex/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
 
-        <script src="main.js"></script>
-    </body>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Github Searcher</a>
+</nav>
+
+<div class="container">
+
+    <div class="searchContainer">
+        <h1>Search Github Users</h1>
+        <p class="lead">Enter a username to fetch a user's profile info and repos</p>
+        <input type="text" id="searchUser" class="form-control" placeholder="Github Username...">
+        <button type="button" id="getbtn" class="btn btn-success btn-lg">Get info</button>
+    </div>
+    <br>
+    <div id="profile"></div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="./main.js"></script>
+</body>
+
 </html>
